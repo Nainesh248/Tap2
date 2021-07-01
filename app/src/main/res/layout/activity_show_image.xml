@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ShowImage">
+
+    <RelativeLayout
+        android:id="@+id/rl_actionbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/actionbar"
+            layout="@layout/custom_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/ns_1"
+        android:layout_below="@+id/rl_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adView"
+        android:paddingBottom="@dimen/_15dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/ads_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.facebook.ads.NativeAdLayout
+                    android:id="@+id/native_ad_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/border"
+                    android:orientation="vertical"
+                    android:visibility="gone" />
+
+                <com.google.android.ads.nativetemplates.TemplateView
+                    android:id="@+id/my_template"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/border"
+                    android:visibility="gone"
+                    app:gnt_template_type="@layout/gnt_small_template_view" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/img_girl"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_below="@+id/ads_layout"
+                android:layout_margin="20dp"
+                android:background="@drawable/border"
+                android:scaleType="centerCrop"
+                android:src="@drawable/no_image" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Touch On Hot Girls</string>
+    <string name="no_internet">Please check your internet connectivity!!!</string>
+    <string name="image">Image Name</string>
+    <string name="click">Click</string>
+    <string name="show_new_image">Click to show new image</string>
+    <string name="start">Start</string>
+    <string name="msg_please_wait">Please wait ...</string>
+    <string name="msg_server_error">Something went wrong please try again</string>
+    <string name="msg_NO_INTERNET_RESPOND">Please connect your internet connection</string>
+    <string name="hi">hi</string>
+    <string name="dialog_ok">Ok</string>
+    <string name="msg_ads_loading">Ads Loading...</string>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-941098434/Tap_App.iml" filepath="$PROJECT_DIR$/.idea/modules/-941098434/Tap_App.iml" group="Tap_App" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app.iml" group="Tap App/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-726722767/nativetemplates.iml" filepath="$PROJECT_DIR$/.idea/modules/-726722767/nativetemplates.iml" group="Tap App/nativetemplates" />
+    </modules>
+  </component>
+</project>
